@@ -4,7 +4,9 @@
   "description": "Mozilla Photon styles for the Ant Design UI library",
   "main": "index.less",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:demo": "cd living-guide && npm install && npm run site",
+    "deploy:demo": "gh-pages -d _site"
   },
   "repository": {
     "type": "git",
