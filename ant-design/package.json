@@ -5,8 +5,9 @@
   "main": "index.less",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:demo": "cd living-guide && npm install && npm run site",
-    "deploy:demo": "gh-pages -d _site"
+    "setup:demo": "cd living-guide && npm install",
+    "build:demo": "cd living-guide && npm run site",
+    "deploy:demo": "cd living-guide && gh-pages -d _site"
   },
   "repository": {
     "type": "git",
@@ -29,5 +30,8 @@
     "less": "2.7.2",
     "less-loader": "4.0.5",
     "photon-colors": "1.3.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.0.0"
   }
 }
